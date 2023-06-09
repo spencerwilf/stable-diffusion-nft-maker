@@ -2,19 +2,14 @@ from flask import Flask, request, jsonify
 import os
 import requests
 
-key = 'L1wDvJLiF7eWt185OlPnWKrCj0uiKlLBAaX7xgUo4F2aMPlqGq3tVdkOibkM'
+key = '2nsKyD5rYUNqxzdYDBsgnLWcgdECi8Yh3ld5pz0Q7cWcF8Ychs1dOShs6tcE'
 app = Flask(__name__)
 
-@app.route('/test')
-def sayHi():
-    print('sadhjkfhsd')
-    return('hi')
 
 @app.route('/create-art', methods=['POST'])
 def create_art():
-    # Retrieve the user's input from the request
-    print(request.json)
 
+    # Retrieve the user's input from the request
 
     api_url = 'https://stablediffusionapi.com/api/v3/text2img'
     headers = {'Authorization': f'Bearer {key}', 'Content-Type': 'application/json'}
