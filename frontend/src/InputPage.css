@@ -1,0 +1,20 @@
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-input-form {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#prompt-input {
+    height: 10rem;
+    width: 20rem;
+    border-radius: 5px;
+    padding-left: .7rem;
+    padding-top: .7rem;
+}
